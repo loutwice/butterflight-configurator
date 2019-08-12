@@ -1,20 +1,20 @@
-# Butterflight Configurator
+# Emuflight Configurator
 
-![Butterflight](http://butterflight.co/img/butterflight-logo.svg)
+![Emuflight](http://butterflight.co/img/butterflight-logo.svg)
 
-Butterflight Configurator is a crossplatform configuration tool for the Butterflight flight control system.
+Emuflight Configurator is a crossplatform configuration tool for the Emuflight flight control system.
 
-It runs as an app within Google Chrome and allows you to configure the Butterflight software running on any [supported Butterflight target](https://github.com/butterflight/butterflight/tree/master/src/main/target).
+It runs as an app within Google Chrome and allows you to configure the Emuflight software running on any [supported Emuflight target](https://github.com/butterflight/butterflight/tree/master/src/main/target).
 
 There is also now a standalone version available, since Google Chrome Apps are getting deprecated on platforms that aren't Chrome OS. [Downloads are available in Releases.](https://github.com/butterflight/butterflight-configurator/releases)
 
-Various types of aircraft are supported by the tool and by Butterflight, e.g. quadcopters, hexacopters, octocopters and fixed-wing aircraft.
+Various types of aircraft are supported by the tool and by Emuflight, e.g. quadcopters, hexacopters, octocopters and fixed-wing aircraft.
 
 ## Authors
 
-Butterflight Configurator is a fork of [Betaflight Configurator](https://github.com/betaflight/betaflight-configurator) which itself is a [fork](#credits) of the Cleanflight Configurator with support for Butterflight instead of Cleanflight.
+Emuflight Configurator is a fork of [Betaflight Configurator](https://github.com/betaflight/betaflight-configurator) which itself is a [fork](#credits) of the Cleanflight Configurator with support for Emuflight instead of Cleanflight.
 
-This configurator is the only configurator with support for Butterflight specific features. It will likely require that you run the latest firmware on the flight controller.
+This configurator is the only configurator with support for Emuflight specific features. It will likely require that you run the latest firmware on the flight controller.
 If you are experiencing any problems please make sure you are running the [latest firmware version](https://github.com/butterflight/butterflight/releases/).
 
 ## Installation
@@ -25,7 +25,7 @@ Download the installer from [Releases.](https://github.com/butterflight/butterfl
 
 ## How to use
 
-You can find the Butterflight Configurator icon in your application tab "Apps"
+You can find the Emuflight Configurator icon in your application tab "Apps"
 
 ## Native app build via NW.js
 
@@ -64,7 +64,7 @@ You can also use multiple platforms e.g. `gulp <taskname> --osx64 --linux64`.
 
 ## Languages
 
-Butterflight Configurator has been translated into several languages. The application will try to detect and use your system language if a translation into this language is available. You can help [translating the application into your language](https://crowdin.com/project/butterflight-configurator).
+Emuflight Configurator has been translated into several languages. The application will try to detect and use your system language if a translation into this language is available. You can help [translating the application into your language](https://crowdin.com/project/butterflight-configurator).
 
 If you prefer to have the application in English or any other language, you can select your desired language in the options menu of the application.
 
@@ -88,11 +88,11 @@ If you need help please reach out on the [butterflightgroup](https://butterfligh
 
 ### Issue trackers
 
-For Butterflight configurator issues raise them here
+For Emuflight configurator issues raise them here
 
 https://github.com/butterflight/butterflight-configurator/issues
 
-For Butterflight firmware issues raise them here
+For Emuflight firmware issues raise them here
 
 https://github.com/butterflight/butterflight/issues
 

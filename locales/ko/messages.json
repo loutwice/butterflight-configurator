@@ -443,7 +443,7 @@
         "message": "기여하기"
     },
     "defaultContributingText": {
-        "message": "베타플라이트를 훨씬 더 좋게 만드는 데 도움이 되고 싶다면, 다음와 같은 다양한 방법으로 도움을 줄 수 있습니다:<br \/><ul><li>포럼과 IRC의 다른 사용자의 질문에 답변할 수 있습니다.<\/li><li>펌웨어와 컨피규레이터에 코드를 기부할 수 있습니다 - 새로운 기능, 오류 고침, 개선 등<\/li><li><a href=\"https:\/\/github.com\/Butterflight\/butterflight\/pulls\" target=\"_blank\">새로운 기능\/오류 고침<\/a>을 테스트하고 피드백을 제공할 수 있습니다.<\/li><li><a href=\"https:\/\/github.com\/butterflight\/butterflight\/issues\" target=\"_blank\">이슈와 기능 추가 요청<\/a>으로 도움을 줄 수 있습니다.<\/li><li>당신의 언어로 <a href=\"https:\/\/crowdin.com\/project\/butterflight-configurator\" target=\"_blank\">컨피규레이터 어플리케이션을 번역<\/a>하여 공동 작업할 수 있습니다.<br \/>한글번역에 대한 의견은 번역(교정)자: 류장협(oto4futur@gmail.com)에게 제안하십시오.<\/li><li><\/li><\/ul>"
+        "message": "베타플라이트를 훨씬 더 좋게 만드는 데 도움이 되고 싶다면, 다음와 같은 다양한 방법으로 도움을 줄 수 있습니다:<br \/><ul><li>포럼과 IRC의 다른 사용자의 질문에 답변할 수 있습니다.<\/li><li>펌웨어와 컨피규레이터에 코드를 기부할 수 있습니다 - 새로운 기능, 오류 고침, 개선 등<\/li><li><a href=\"https:\/\/github.com\/Emuflight\/butterflight\/pulls\" target=\"_blank\">새로운 기능\/오류 고침<\/a>을 테스트하고 피드백을 제공할 수 있습니다.<\/li><li><a href=\"https:\/\/github.com\/butterflight\/butterflight\/issues\" target=\"_blank\">이슈와 기능 추가 요청<\/a>으로 도움을 줄 수 있습니다.<\/li><li>당신의 언어로 <a href=\"https:\/\/crowdin.com\/project\/butterflight-configurator\" target=\"_blank\">컨피규레이터 어플리케이션을 번역<\/a>하여 공동 작업할 수 있습니다.<br \/>한글번역에 대한 의견은 번역(교정)자: 류장협(oto4futur@gmail.com)에게 제안하십시오.<\/li><li><\/li><\/ul>"
     },
     "defaultChangelogAction": {
         "message": "변경이력"
@@ -476,7 +476,7 @@
         "message": "베타플라이트 위키는 정보를 얻을 수 있는 훌륭한 자료입니다, 그것은 <a href=\"https:\/\/github.com\/butterflight\/butterflight\/wiki\" target=\"_blank\">여기서<\/a> 찾으실 수 있습니다."
     },
     "defaultDocumentation2": {
-        "message": "펌웨어에 대한 릴리즈 노트는 <a href=\"https:\/\/github.com\/Butterflight\/Butterflight\/releases\" target=\"_blank\">GitHub 릴리즈 페이지<\/a>에서 구독하실 수 있습니다."
+        "message": "펌웨어에 대한 릴리즈 노트는 <a href=\"https:\/\/github.com\/Emuflight\/Emuflight\/releases\" target=\"_blank\">GitHub 릴리즈 페이지<\/a>에서 구독하실 수 있습니다."
     },
     "defaultSupportHead": {
         "message": "지원"
@@ -500,7 +500,7 @@
         "message": "<a href=\"https:\/\/www.youtube.com\/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Joshua Bardwell 베타플라이트 동영상<\/a>"
     },
     "defaultSupport4": {
-        "message": "<a href=\"https:\/\/github.com\/Butterflight\" target=\"_blank\">GitHub<\/a>"
+        "message": "<a href=\"https:\/\/github.com\/Emuflight\" target=\"_blank\">GitHub<\/a>"
     },
     "defaultSupport5": {
         "message": "<a href=\"http:\/\/butterflight.tk\/slack\" target=\"_blank\">베타플라이트 개발 슬랙<\/a>"
@@ -2123,7 +2123,7 @@
         "message": "<strong>통신 복구 \/ 손실<\/strong>"
     },
     "firmwareFlasherRecoveryText": {
-        "message": "보드와의 통신이 끊어진 경우 다음 단계에 따라 통신을 복구하십시오: <ul><li>전원을 끄십시오.<\/li><li>'재부팅 절차 없음', '칩 전부 삭제'를 활성화 하십시오.<\/li><li>부트 핀을 점프하거나 부트 버튼을 누르고 계십시오.<\/li><li>전원을 켜십시오.(제대로 완료되면 작동 중인 LED가 깜박거리지 않습니다)<\/li><li>필요한 경우 STM32 드라이버와 Zadig를 설치하십시오. (베타플라이트 매뉴얼의 <a href=\"https:\/\/github.com\/butterflight\/butterflight\/wiki\/Installing-Butterflight\"target=\"_blank\">>USB 플래싱<\/a> 섹션을 보십시오.)<\/li><li>컨피규레이터를 닫고, 모든 실행 중인 크롬 인스턴트, 크롬 앱을 닫으십시오. 컨피규레이터를 다시 시작하십시오.<\/li><li>FC에 BOOT 버튼이 있으면 해제하십시오.<\/li><li>올바른 펌웨어로 플래시 하십시오. (당신의 FC 매뉴얼에 명시된 경우 수동 전송 속도를 사용하여).<\/li><li>전원을 끄십시오.<\/li><li>BOOT 점퍼를 제거하십시오.<\/li><li>전원을 켜십시오. (작동 중인 LED가 깜박입니다.).<\/li><li>정상적으로 연결하십시오.<\/li><\/ul>"
+        "message": "보드와의 통신이 끊어진 경우 다음 단계에 따라 통신을 복구하십시오: <ul><li>전원을 끄십시오.<\/li><li>'재부팅 절차 없음', '칩 전부 삭제'를 활성화 하십시오.<\/li><li>부트 핀을 점프하거나 부트 버튼을 누르고 계십시오.<\/li><li>전원을 켜십시오.(제대로 완료되면 작동 중인 LED가 깜박거리지 않습니다)<\/li><li>필요한 경우 STM32 드라이버와 Zadig를 설치하십시오. (베타플라이트 매뉴얼의 <a href=\"https:\/\/github.com\/butterflight\/butterflight\/wiki\/Installing-Emuflight\"target=\"_blank\">>USB 플래싱<\/a> 섹션을 보십시오.)<\/li><li>컨피규레이터를 닫고, 모든 실행 중인 크롬 인스턴트, 크롬 앱을 닫으십시오. 컨피규레이터를 다시 시작하십시오.<\/li><li>FC에 BOOT 버튼이 있으면 해제하십시오.<\/li><li>올바른 펌웨어로 플래시 하십시오. (당신의 FC 매뉴얼에 명시된 경우 수동 전송 속도를 사용하여).<\/li><li>전원을 끄십시오.<\/li><li>BOOT 점퍼를 제거하십시오.<\/li><li>전원을 켜십시오. (작동 중인 LED가 깜박입니다.).<\/li><li>정상적으로 연결하십시오.<\/li><\/ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "펌웨어 플래시 도구 나가기"

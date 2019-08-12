@@ -382,7 +382,7 @@ OSD.constants = {
       name: 'CROSSHAIRS',
       desc: 'osdDescElementCrosshairs',
       default_position: 193,
-      draw_order: 40, 
+      draw_order: 40,
       positionable: function() {
         return semver.gte(CONFIG.apiVersion, "1.39.0") ? true : false;
       },
@@ -436,18 +436,18 @@ OSD.constants = {
           for (var i = -hudheight; i <= hudheight; i++) {
               var element = {x: -hudwidth, y : i, sym : SYM.AH_DECORATION};
               horizonSidebar.push(element);
-              
+
               element = {x: hudwidth, y : i, sym : SYM.AH_DECORATION};
               horizonSidebar.push(element);
           }
-          
+
           // AH level indicators
           var element = {x: -hudwidth + 1, y : 0, sym : SYM.AH_LEFT};
           horizonSidebar.push(element);
 
           element = {x: hudwidth - 1, y : 0, sym : SYM.AH_RIGHT};
           horizonSidebar.push(element);
-          
+
           return horizonSidebar;
       }
     },
@@ -600,7 +600,7 @@ OSD.constants = {
     BATTERY_WARNING: {
       name: 'BATTERY_WARNING',
       desc: 'osdDescElementBatteryWarning',
-      default_position: -1,      
+      default_position: -1,
       positionable: true,
       preview: 'LOW VOLTAGE'
     },
@@ -877,7 +877,7 @@ OSD.constants = {
     { file: "bold", name: "Bold" },
     { file: "large", name: "Large" },
     { file: "extra_large", name: "Extra Large" },
-    { file: "butterflight", name: "Butterflight" },
+    { file: "butterflight", name: "Emuflight" },
     { file: "digital", name: "Digital" },
     { file: "clarity", name: "Clarity" }
   ]
@@ -1080,7 +1080,7 @@ OSD.drawByOrder = function(selectedPosition, field, charCode) {
                 }
             }
         }
-    
+
         // Default action, overwrite old field
         OSD.data.preview[selectedPosition++] = [field, charCode];
     }
@@ -1355,7 +1355,7 @@ OSD.GUI.preview = {
     var position = $(this).removeAttr('style').data('position');
     var field_id = parseInt(ev.dataTransfer.getData('text/plain'))
     var display_item = OSD.data.display_items[field_id];
-    
+
     var overflows_line = 0;
     // Standard preview, string type
     if (display_item.preview.constructor !== Array) {
@@ -1363,15 +1363,15 @@ OSD.GUI.preview = {
         if (overflows_line < 0) {
             position += overflows_line;
         }
-        
+
     // Advanced preview, array type
     } else {
         var arrayElements = display_item.preview;
         var limits = OSD.searchLimitsElement(arrayElements);
-        
+
         var selectedPositionX = position % FONT.constants.SIZES.LINE;
         var selectedPositionY = Math.trunc(position / FONT.constants.SIZES.LINE);
-        
+
         if ((limits.minX < 0) && ((selectedPositionX + limits.minX) < 0)) {
             position += Math.abs(selectedPositionX + limits.minX);
         } else if ((limits.maxX > 0) && ((selectedPositionX + limits.maxX) >= FONT.constants.SIZES.LINE)) {
@@ -1459,7 +1459,7 @@ TABS.osd.initialize = function (callback) {
             }
             $('.supported').fadeIn();
 
-            // show Butterflight logo in preview
+            // show Emuflight logo in preview
             var $previewLogo = $('.preview-logo').empty();
             $previewLogo.append(
               $('<label for="preview-logo">Logo: </label><input type="checkbox" name="preview-logo" class="togglesmall"></input>')
@@ -1770,8 +1770,8 @@ TABS.osd.initialize = function (callback) {
             // draw all the displayed items and the drag and drop preview images
             for(let field of OSD.data.display_items) {
 
-              if (!field.preview || !field.isVisible) { 
-                  continue; 
+              if (!field.preview || !field.isVisible) {
+                  continue;
               }
 
               var selectedPosition = (field.position >= 0) ? field.position : field.position + OSD.data.display_size.total;
@@ -1780,14 +1780,14 @@ TABS.osd.initialize = function (callback) {
               field.preview_img = new Image();
               var canvas = document.createElement('canvas');
               var ctx = canvas.getContext("2d");
-              
+
               // Standard preview, type String
               if (field.preview.constructor !== Array) {
-                  
-                  
+
+
                   // fill the screen buffer
                   for(var i = 0; i < field.preview.length; i++) {
-                    
+
                     // Add the character to the preview
                     var charCode = field.preview.charCodeAt(i);
                     OSD.drawByOrder(selectedPosition++, field, charCode);

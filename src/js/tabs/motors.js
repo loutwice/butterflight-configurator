@@ -52,7 +52,7 @@ TABS.motors.initialize = function (callback) {
         $('#content').load("./tabs/motors.html", process_html);
     }
 
-    // Get information from Butterflight
+    // Get information from Emuflight
     if (semver.gte(CONFIG.apiVersion, "1.36.0")) {
         // BF 3.2.0+
         MSP.send_message(MSPCodes.MSP_MOTOR_CONFIG, false, false, get_arm_status);

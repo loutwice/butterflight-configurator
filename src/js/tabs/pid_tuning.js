@@ -811,7 +811,7 @@ TABS.pid_tuning.initialize = function (callback) {
             } else {
                 pidControllerList = [
                     {name: "Legacy"},
-                    {name: "Butterflight"}
+                    {name: "Emuflight"}
                 ]
             }
 

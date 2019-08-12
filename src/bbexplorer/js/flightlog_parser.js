@@ -252,11 +252,11 @@ var FlightLogParser = function(logData) {
             rc_interpolation_interval:null, // RC Control Interpolation Interval
             dterm_filter_type:null,         // D term filtering type (PT1, BIQUAD)
             pidAtMinThrottle:null,          // Stabilisation at zero throttle
-            itermThrottleGain:null,         // Butterflight PID
-            ptermSetpointWeight:null,       // Butterflight PID
-            dtermSetpointWeight:null,       // Butterflight PID
-            yawRateAccelLimit:null,         // Butterflight PID
-            rateAccelLimit:null,            // Butterflight PID
+            itermThrottleGain:null,         // Emuflight PID
+            ptermSetpointWeight:null,       // Emuflight PID
+            dtermSetpointWeight:null,       // Emuflight PID
+            yawRateAccelLimit:null,         // Emuflight PID
+            rateAccelLimit:null,            // Emuflight PID
             gyro_soft_type:null,            // Gyro soft filter type (PT1, BIQUAD)
             debug_mode:null,                // Selected Debug Mode
             features:null,                  // Activated features (e.g. MOTORSTOP etc)
@@ -414,7 +414,7 @@ var FlightLogParser = function(logData) {
                 }
             break;
 
-            // Butterflight Log Header Parameters
+            // Emuflight Log Header Parameters
             case "minthrottle":
                 that.sysConfig[fieldName] = parseInt(fieldValue, 10);
                 that.sysConfig.motorOutput[0] = that.sysConfig[fieldName]; // by default, set the minMotorOutput to match minThrottle
@@ -667,11 +667,11 @@ var FlightLogParser = function(logData) {
 
                 //TODO Unify this somehow...
 
-                // Extract the firmware revision in case of Butterflight/Raceflight/Cleanfligh 2.x/Other
+                // Extract the firmware revision in case of Emuflight/Raceflight/Cleanfligh 2.x/Other
                 var matches = fieldValue.match(/(.*Flight).* (\d+)\.(\d+)(\.(\d+))*/i);
                 if(matches!=null) {
 
-                    // Detecting Butterflight requires looking at the revision string
+                    // Detecting Emuflight requires looking at the revision string
                     if (matches[1] === "ButterFlight") {
                         that.sysConfig.firmwareType = FIRMWARE_TYPE_BUTTERFLIGHT;
                         $('html').removeClass('isBaseF');

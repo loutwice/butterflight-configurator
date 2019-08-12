@@ -32,7 +32,7 @@ var nwBuilderOptions = {
     version: '0.28.3',
     files: './dist/**/*',
     macIcns: './src/images/bf_icon.icns',
-    macPlist: { 'CFBundleDisplayName': 'Butterflight Configurator'},
+    macPlist: { 'CFBundleDisplayName': 'Emuflight Configurator'},
     winIco: './src/images/bf_icon.ico'
 };
 
@@ -484,7 +484,7 @@ function release_zip(arch) {
     var output = getReleaseFilename(arch, 'zip');
     var base = path.join(APPS_DIR, pkg.name, arch);
 
-    return compressFiles(src, base, output, 'Butterflight Configurator');
+    return compressFiles(src, base, output, 'Emuflight Configurator');
 }
 
 // Create distribution package for chromeos platform
@@ -609,10 +609,10 @@ function release_osx64() {
             target: path.join(RELEASE_DIR, getReleaseFilename('macOS', 'dmg')),
             basepath: path.join(APPS_DIR, pkg.name, 'osx64'),
             specification: {
-                title: 'Butterflight Configurator',
+                title: 'Emuflight Configurator',
                 contents: [
                     { 'x': 448, 'y': 342, 'type': 'link', 'path': '/Applications' },
-                    { 'x': 192, 'y': 344, 'type': 'file', 'path': pkg.name + '.app', 'name': 'Butterflight Configurator.app' }
+                    { 'x': 192, 'y': 344, 'type': 'file', 'path': pkg.name + '.app', 'name': 'Emuflight Configurator.app' }
                 ],
                 background: path.join(__dirname, 'assets/osx/dmg-background.png'),
                 format: 'UDZO',

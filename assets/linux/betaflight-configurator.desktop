@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Butterflight Configurator
-Comment=Crossplatform configuration tool for the Butterflight flight control system
+Name=Emuflight Configurator
+Comment=Crossplatform configuration tool for the Emuflight flight control system
 Exec=/opt/butterflight/butterflight-configurator/butterflight-configurator
 Icon=/opt/butterflight/butterflight-configurator/icon/emu_icon_128.png
 Terminal=false

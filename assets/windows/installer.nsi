@@ -10,10 +10,10 @@
 
 # Some definitions
 !define SOURCE_FILES          "..\..\apps\butterflight-configurator\${PLATFORM}\*"
-!define APP_NAME              "Butterflight Configurator"
-!define COMPANY_NAME          "The Butterflight open source project."
-!define GROUP_NAME            "Butterflight"
-!define FOLDER_NAME           "Butterflight-Configurator"
+!define APP_NAME              "Emuflight Configurator"
+!define COMPANY_NAME          "The Emuflight open source project."
+!define GROUP_NAME            "Emuflight"
+!define FOLDER_NAME           "Emuflight-Configurator"
 !define FILE_NAME_INSTALLER   "butterflight-configurator-installer_${VERSION}_${PLATFORM}.exe"
 !define FILE_NAME_UNINSTALLER "uninstall-butterflight-configurator.exe"
 !define FILE_NAME_EXECUTABLE  "butterflight-configurator.exe"
