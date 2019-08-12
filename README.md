@@ -4,7 +4,7 @@
 
 Emuflight Configurator is a crossplatform configuration tool for the Emuflight flight control system.
 
-It runs as an app within Google Chrome and allows you to configure the Emuflight software running on any [supported Emuflight target](https://github.com/butterflight/butterflight/tree/master/src/main/target).
+It runs as an app within Google Chrome and allows you to configure the Emuflight software running on any [supported Emuflight target](https://github.com/emuflight/EmuFlight-Butter-Varient/tree/master/src/main/target).
 
 There is also now a standalone version available, since Google Chrome Apps are getting deprecated on platforms that aren't Chrome OS. [Downloads are available in Releases.](https://github.com/butterflight/butterflight-configurator/releases)
 
@@ -15,7 +15,7 @@ Various types of aircraft are supported by the tool and by Emuflight, e.g. quadc
 Emuflight Configurator is a fork of [Betaflight Configurator](https://github.com/betaflight/betaflight-configurator) which itself is a [fork](#credits) of the Cleanflight Configurator with support for Emuflight instead of Cleanflight.
 
 This configurator is the only configurator with support for Emuflight specific features. It will likely require that you run the latest firmware on the flight controller.
-If you are experiencing any problems please make sure you are running the [latest firmware version](https://github.com/butterflight/butterflight/releases/).
+If you are experiencing any problems please make sure you are running the [latest firmware version](https://github.com/emuflight/EmuFlight-Butter-Varient/releases/).
 
 ## Installation
 
@@ -94,7 +94,7 @@ https://github.com/butterflight/butterflight-configurator/issues
 
 For Emuflight firmware issues raise them here
 
-https://github.com/butterflight/butterflight/issues
+https://github.com/emuflight/EmuFlight-Butter-Varient/issues
 
 ## Technical details
 
