@@ -1116,7 +1116,7 @@ html.isBF .config-graph h4 span:first-child,
 html.isBF .log-graph-config h3 span {
     /*background-image: linear-gradient(to bottom,#fff8e9 0,#ffbb00 100%);*/
     color: black;
-    background-color: #f7931e;
+    background-color: #22b7eb;
     border: 1px solid #dba718;
 }
 
@@ -1255,7 +1255,7 @@ div#lap-timer td:first-child {
 #changelog .wrapper {
     height: 100%;
     padding: 0 20px;
-    border-left: 5px solid #f7931e;
+    border-left: 5px solid #22b7eb;
     overflow: auto;
     display: none;
 }
@@ -1265,7 +1265,7 @@ div#lap-timer td:first-child {
     top: 50px;
     right: 665px;
     position: absolute;
-    background: #f7931e;
+    background: #22b7eb;
     cursor: pointer;
     border-radius: 5px 5px 0 0;
     border-bottom: none;

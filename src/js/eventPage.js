@@ -17,7 +17,7 @@ function startApplication() {
         }
     }, function (createdWindow) {
         if (getChromeVersion() >= 54) {
-            createdWindow.icon = 'images/bf_icon_128.png';
+            createdWindow.icon = 'images/emu_icon_128.png';
         }
         createdWindow.onClosed.addListener(function () {
             // automatically close the port when application closes
@@ -40,7 +40,7 @@ function startApplication() {
                 bufView[3] = 0x74; // t
                 bufView[4] = 0x0D; // enter
 
-                chrome.serial.send(connectionId, bufferOut, function () { console.log('Send exit') }); 
+                chrome.serial.send(connectionId, bufferOut, function () { console.log('Send exit') });
 
                 setTimeout(function() {
                     bufferOut = new ArrayBuffer(22);
@@ -125,7 +125,7 @@ function getManifestVersion(manifest) {
     return version;
 }
 
-function getChromeVersion () {     
+function getChromeVersion () {
     var raw = navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./);
 
     return raw ? parseInt(raw[2], 10) : false;

@@ -1097,12 +1097,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #f7931e;
+  color: #22b7eb;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #f7931e;
+  color: #22b7eb;
   text-decoration: none;
 }
 a:focus {
@@ -3120,19 +3120,19 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-default .badge {
   color: #000;
-  background-color: #f7931e;
+  background-color: #22b7eb;
 }
 .btn-primary {
   color: #000;
   border-radius: 3px;
   font-family: 'open_sansbold', Arial;
-  background-color: #f7931e;
+  background-color: #22b7eb;
   border-color: #dba718;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #000;
-  background-color: #f7931e;
+  background-color: #22b7eb;
   border-color: #dba718;
 }
 .btn-primary:hover {

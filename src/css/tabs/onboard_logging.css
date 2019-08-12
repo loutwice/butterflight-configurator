@@ -107,7 +107,7 @@
 
 .tab-onboard_logging .dataflash-used,
 .tab-onboard_logging .sdcard-other {
-    background-color: #f7931e;
+    background-color: #22b7eb;
     border-radius: 4px;
 }
 
@@ -268,7 +268,7 @@
     margin-top: 8px;
     margin-bottom: 8px;
     margin-right: 10px;
-    background-color: #f7931e;
+    background-color: #22b7eb;
     border-radius: 3px;
     border: 1px solid #dba718;
     color: #000;

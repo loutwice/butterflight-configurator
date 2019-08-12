@@ -972,7 +972,7 @@ TABS.pid_tuning.initialize = function (callback) {
                 context.moveTo(midx, midy);
                 context.quadraticCurveTo(midxr, midyr, canvasWidth, 0);
                 context.lineWidth = 2;
-                context.strokeStyle = '#f7931e';
+                context.strokeStyle = '#22b7eb';
                 context.stroke();
             }, 0);
         }).trigger('input');
