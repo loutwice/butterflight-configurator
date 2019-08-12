@@ -31,9 +31,9 @@ const RELEASE_DIR = './release/';
 var nwBuilderOptions = {
     version: '0.28.3',
     files: './dist/**/*',
-    macIcns: './src/images/bf_icon.icns',
+    macIcns: './src/images/emu_icon.icns',
     macPlist: { 'CFBundleDisplayName': 'Emuflight Configurator'},
-    winIco: './src/images/bf_icon.ico'
+    winIco: './src/images/emu_icon.ico'
 };
 
 var nwArmVersion = '0.27.6';
@@ -523,11 +523,11 @@ function release_deb(arch, done) {
              architecture: getLinuxPackageArch('deb', arch),
              maintainer: pkg.author,
              description: pkg.description,
-             postinst: ['xdg-desktop-menu install /opt/butterflight/butterflight-configurator/butterflight-configurator.desktop'],
-             prerm: ['xdg-desktop-menu uninstall butterflight-configurator.desktop'],
+             postinst: ['xdg-desktop-menu install /opt/emuflight/emuflight-configurator/emuflight-configurator.desktop'],
+             prerm: ['xdg-desktop-menu uninstall emuflight-configurator.desktop'],
              depends: 'libgconf-2-4',
              changelog: [],
-             _target: 'opt/butterflight/butterflight-configurator',
+             _target: 'opt/emuflight/emuflight-configurator',
              _out: RELEASE_DIR,
              _copyright: 'assets/linux/copyright',
              _clean: true
@@ -557,9 +557,9 @@ function release_rpm(arch, done) {
              files:
                  [ { cwd: path.join(APPS_DIR, pkg.name, arch),
                      src: '*',
-                     dest: '/opt/butterflight/butterflight-configurator' } ],
-             postInstallScript: ['xdg-desktop-menu install /opt/butterflight/butterflight-configurator/butterflight-configurator.desktop'],
-             preUninstallScript: ['xdg-desktop-menu uninstall butterflight-configurator.desktop'],
+                     dest: '/opt/emuflight/emuflight-configurator' } ],
+             postInstallScript: ['xdg-desktop-menu install /opt/emuflight/emuflight-configurator/emuflight-configurator.desktop'],
+             preUninstallScript: ['xdg-desktop-menu uninstall emuflight-configurator.desktop'],
              tempDir: path.join(RELEASE_DIR,'tmp-rpm-build-' + arch),
              keepTemp: false,
              verbose: false,

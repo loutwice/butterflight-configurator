@@ -9,14 +9,14 @@
 # ${DEST_FOLDER} - Destination folder for the installer files
 
 # Some definitions
-!define SOURCE_FILES          "..\..\apps\butterflight-configurator\${PLATFORM}\*"
+!define SOURCE_FILES          "..\..\apps\emufligth-configurator\${PLATFORM}\*"
 !define APP_NAME              "Emuflight Configurator"
 !define COMPANY_NAME          "The Emuflight open source project."
 !define GROUP_NAME            "Emuflight"
 !define FOLDER_NAME           "Emuflight-Configurator"
-!define FILE_NAME_INSTALLER   "butterflight-configurator-installer_${VERSION}_${PLATFORM}.exe"
-!define FILE_NAME_UNINSTALLER "uninstall-butterflight-configurator.exe"
-!define FILE_NAME_EXECUTABLE  "butterflight-configurator.exe"
+!define FILE_NAME_INSTALLER   "emufligth-configurator-installer_${VERSION}_${PLATFORM}.exe"
+!define FILE_NAME_UNINSTALLER "uninstall-emufligth-configurator.exe"
+!define FILE_NAME_EXECUTABLE  "emufligth-configurator.exe"
 !define LICENSE               "..\..\LICENSE"
 
 
