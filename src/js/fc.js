@@ -99,7 +99,7 @@ var FC = {
             dstProfile:                 0,
             srcProfile:                 0,
         };
-        
+
         FEATURE_CONFIG = {
             features:                   0,
         };
@@ -108,11 +108,11 @@ var FC = {
             beepers:                    0,
             dshotBeaconTone:            0,
         };
-        
+
         MIXER_CONFIG = {
             mixer:                      0,
             reverseMotorDir:            0,
-        }; 
+        };
 
         BOARD_ALIGNMENT_CONFIG = {
             roll:                       0,
@@ -350,11 +350,9 @@ var FC = {
         IMUF_FILTER_CONFIG = {
             imuf_mode:                0,
             imuf_roll_q:              0,
-            imuf_roll_w:              0,
             imuf_pitch_q:             0,
-            imuf_pitch_w:             0,
             imuf_yaw_q:               0,
-            imuf_yaw_w:               0,
+            imuf_w:                   0,
             imuf_roll_lpf_cutoff_hz:  0,
             imuf_pitch_lpf_cutoff_hz: 0,
             imuf_yaw_lpf_cutoff_hz:   0

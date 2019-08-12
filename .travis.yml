@@ -1,14 +1,31 @@
+os:
+  - linux
+  - osx
+
+sudo: false
+
+dist: trusty
+
+addons:
+  apt:
+    packages:
+      - rpm
+
+git:
+  depth: 5
+
 language: node_js
 
 node_js:
-  - "node"
+  - 8.11.2
 
 before_install:
+  - npm i -g npm@6.0.1
   - npm install gulp -g
 
 script:
-  - npm install
   - gulp release
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then gulp release --chromeos; fi
 
 cache:
   directories:

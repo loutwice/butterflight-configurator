@@ -252,8 +252,18 @@ TABS.pid_tuning.initialize = function (callback) {
             $('.pid_filter input[name="dTermNotchFrequency"]').val(FILTER_CONFIG.dterm_notch_hz);
             $('.pid_filter input[name="dTermNotchCutoff"]').val(FILTER_CONFIG.dterm_notch_cutoff);
 
-            $('input[name="dtermSetpointTransition-number"]').val(ADVANCED_TUNING.dtermSetpointTransition / 100);
-            $('input[name="dtermSetpointTransition-range"]').val(ADVANCED_TUNING.dtermSetpointTransition / 100);
+            var dtermSetpointTransitionNumberElement = $('input[name="dtermSetpointTransition-number"]');
+            var dtermSetpointTransitionRangeElement = $('input[name="dtermSetpointTransition-range"]');
+            if (semver.gte(CONFIG.apiVersion, "1.38.0")) {
+                dtermSetpointTransitionNumberElement.attr('min', 0.00);
+                dtermSetpointTransitionRangeElement.attr('min', 0.00);
+            } else {
+                dtermSetpointTransitionNumberElement.attr('min', 0.01);
+                dtermSetpointTransitionRangeElement.attr('min', 0.01);
+            }
+
+            dtermSetpointTransitionNumberElement.val(ADVANCED_TUNING.dtermSetpointTransition / 100);
+            dtermSetpointTransitionRangeElement.val(ADVANCED_TUNING.dtermSetpointTransition / 100);
 
             $('input[name="dtermSetpoint-number"]').val(ADVANCED_TUNING.dtermSetpointWeight / 100);
             $('input[name="dtermSetpoint-range"]').val(ADVANCED_TUNING.dtermSetpointWeight / 100);
@@ -298,6 +308,7 @@ TABS.pid_tuning.initialize = function (callback) {
                 $('#imuf_roll_q').val(IMUF_FILTER_CONFIG.imuf_roll_q);
                 $('#imuf_pitch_q').val(IMUF_FILTER_CONFIG.imuf_pitch_q);
                 $('#imuf_yaw_q').val(IMUF_FILTER_CONFIG.imuf_yaw_q);
+                $('#imuf_w').val(IMUF_FILTER_CONFIG.imuf_w);
 
                 //Only show HELIO SPRING compatible settings
                 $('.dtermfiltertype').hide();
@@ -472,6 +483,7 @@ TABS.pid_tuning.initialize = function (callback) {
                 IMUF_FILTER_CONFIG.imuf_roll_q = parseInt($('#imuf_roll_q').val());
                 IMUF_FILTER_CONFIG.imuf_pitch_q = parseInt($('#imuf_pitch_q').val());
                 IMUF_FILTER_CONFIG.imuf_yaw_q = parseInt($('#imuf_yaw_q').val());
+                IMUF_FILTER_CONFIG.imuf_w = parseInt($('#imuf_w').val());
             }
         }
     }
@@ -1091,7 +1103,7 @@ TABS.pid_tuning.initialize = function (callback) {
                             return MSP.promise(MSPCodes.MSP_SET_FAST_KALMAN, mspHelper.crunch(MSPCodes.MSP_SET_FAST_KALMAN));
                         }
                     } else {
-                        return MSP.promise(MSPCodes.MSP_SET_IMUF_CONFIG, mspHelper.crunch(MSPCodes.MSP_SET_IMUF_CONFIG));                        
+                        return MSP.promise(MSPCodes.MSP_SET_IMUF_CONFIG, mspHelper.crunch(MSPCodes.MSP_SET_IMUF_CONFIG));
                     }
                 }
             }).then(function () {

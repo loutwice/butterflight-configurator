@@ -6,6 +6,9 @@
         "message": "Butterflight Configurator",
         "description": "Title of the application window, usually not translated"
     },
+    "error": {
+        "message": "Error: {{errorMessage}}"
+    },
     "warningTitle": {
         "message": "Warning"
     },
@@ -75,11 +78,17 @@
     "language_it": {
         "message": "Italiano (it)"
     },
+    "language_ja": {
+        "message": "\u65E5\u672C\u8A9E (ja)"
+    },
     "language_ko": {
         "message": "\ud55c\uad6d\uc5b4 (ko)"
     },
     "language_lv": {
         "message": "Latvie\u0161u (lv)"
+    },
+    "language_pt": {
+        "message": "Portugu\u00EAs (pt)"
     },
     "language_zh_CN": {
         "message": "\u7b80\u4f53\u4e2d\u6587 (zh_CN)"
@@ -371,7 +380,8 @@
     },
 
     "infoVersions": {
-        "message" : "Running - OS: <strong>$1</strong>, Chrome: <strong>$2</strong>, Configurator: <strong>$3</strong>"
+        "message" : "Running - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Configurator: <strong>{{configuratorVersion}}</strong>",
+        "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
     },
     "releaseCheckLoaded": {
         "message" : "Loaded release information for $1 from GitHub."
@@ -1773,6 +1783,25 @@
         "message": "Qty"
     },
 
+    "motorsVoltage": {
+        "message": "Voltage:"
+    },
+    "motorsADrawing": {
+        "message": "Amperage:"
+    },
+    "motorsmAhDrawn": {
+        "message": "Amp. drawn:"
+    },
+    "motorsVoltageValue": {
+        "message": "$1 V"
+    },
+    "motorsADrawingValue": {
+        "message": "$1 A"
+    },
+    "motorsmAhDrawnValue": {
+        "message": "$1 mAh"
+    },
+
     "motorsText":{
         "message": "Motors"
     },
@@ -2213,6 +2242,9 @@
     "firmwareFlasherFirmwareNotLoaded": {
         "message": "Firmware not loaded"
     },
+    "firmwareFlasherFirmwareLocalLoaded": {
+        "message": "Loaded Local Firmware: ($1 bytes)"
+    },
     "firmwareFlasherHexCorrupted": {
         "message": "HEX file appears to be corrupted"
     },
@@ -2244,6 +2276,34 @@
     "ledStripButtonSave": {
         "message": "Save"
     },
+    "ledStripColorSetupTitle": {
+        "message": "Color setup",
+        "description": "Color setup title of the led strip"
+    },
+    "ledStripH": {
+        "message": "H",
+        "description": "Abbreviation of Hue in HSV (Hue, Saturation, Brightness) color model"
+    },
+    "ledStripS": {
+        "message": "S",
+        "description": "Abbreviation of Saturation in HSV  (Hue, Saturation, Brightness) color model"
+    },
+    "ledStripV": {
+        "message": "V",
+        "description": "Abbreviation of Brightness in HSV  (Hue, Saturation, Brightness) color model"
+    },
+    "ledStripRemainingText": {
+        "message": "Remaining",
+        "description": "In the LED STRIP, text next the counter of leds remaining"
+    },
+    "ledStripClearSelectedButton": {
+        "message": "Clear selected",
+        "description": "In the LED STRIP, clear selected leds"
+    },
+    "ledStripClearAllButton": {
+        "message": "Clear ALL",
+        "description": "In the LED STRIP, clear all leds"
+    },
     "ledStripEepromSaved": {
         "message": "EEPROM <span class=\"message-positive\">saved</span>"
     },
@@ -2256,11 +2316,147 @@
     "ledStripFunctionTitle": {
         "message": "Function"
     },
+    "ledStripFunctionNoneOption": {
+        "message": "None",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionColorOption": {
+        "message": "Color",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionModesOption": {
+        "message": "Modes &amp; Orientation",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionArmOption": {
+        "message": "Arm State",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionBatteryOption": {
+        "message": "Battery",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionRSSIOption": {
+        "message": "RSSI",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionGPSOption": {
+        "message": "GPS",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionRingOption": {
+        "message": "Ring",
+        "description": "One of the modes of the Led Strip"
+    },
     "ledStripColorModifierTitle": {
         "message": "Color modifier"
     },
-    "ledStripThrottleFunction": {
-        "message": "Throttle"
+    "ledStripModeColorsTitle": {
+        "message": "Mode colors"
+    },
+    "ledStripModeColorsModeOrientation": {
+        "message": "Orientation",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeHeadfree": {
+        "message": "Headfree",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeHorizon": {
+        "message": "Horizon",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeAngle": {
+        "message": "Angle",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeMag": {
+        "message": "Mag",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeBaro": {
+        "message": "Baro",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripDirN": {
+        "message": "N",
+        "description": "North direction in Color Mode in Led Strip"
+    },
+    "ledStripDirE": {
+        "message": "E",
+        "description": "East direction in Color Mode in Led Strip"
+    },
+    "ledStripDirS": {
+        "message": "S",
+        "description": "South direction in Color Mode in Led Strip"
+    },
+    "ledStripDirW": {
+        "message": "W",
+        "description": "West direction in Color Mode in Led Strip"
+    },
+    "ledStripDirU": {
+        "message": "U",
+        "description": "Up direction in Color Mode in Led Strip"
+    },
+    "ledStripDirD": {
+        "message": "D",
+        "description": "Down direction in Color Mode in Led Strip"
+    },
+    "ledStripModesOrientationTitle": {
+        "message": "LED Orientation ('Modes &amp; Orientation') and Color",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModesSpecialColorsTitle": {
+        "message": "Special colors",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeDisarmed": {
+        "message": "Disarmed",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeArmed": {
+        "message": "Armed",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeAnimation": {
+        "message": "Animation",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeBlinkBg": {
+        "message": "Blink background",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeGPSNoSats": {
+        "message": "GPS: no sats",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeGPSNoLock": {
+        "message": "GPS: no lock",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeGPSLocked": {
+        "message": "GPS: locked",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripWiring": {
+        "message": "LED Strip Wiring",
+        "description": "One of the modes in Led Strip"
+    },
+    "ledStripWiringMode": {
+        "message": "Wire Ordering Mode",
+        "description": "One of the wiring modes in Led Strip"
+    },
+    "ledStripWiringClearControl": {
+        "message": "Clear selected",
+        "description": "Control button in the wiring modes in Led Strip"
+    },
+    "ledStripWiringClearAllControl": {
+        "message": "Clear ALL Wiring",
+        "description": "Control button in the wiring modes in Led Strip"
+    },
+    "ledStripWiringMessage": {
+        "message": "LEDs without wire ordering number will not be saved.",
+        "description": "Message in the wiring modes in Led Strip"
     },
     "ledStripVtxFunction": {
         "message": "Larson scanner"
@@ -2505,6 +2701,9 @@
     },
     "pidTuningImufYawQ": {
         "message": "IMU-F yaw Q"
+    },
+    "pidTuningImufW": {
+        "message": "IMU-F W"
     },
     "pidTuningKalmanFilterQHelp": {
         "message": "Kalman filter Q Coefficient. The amount of trust in gyro data accuracy (Higher value = more trust and less filtering)"
@@ -2812,7 +3011,7 @@
         "message": "Scale [1/10th mV/A]"
     },
     "powerAmperageOffset": {
-        "message": "Offset [mV]"
+        "message": "Offset [mA]"
     },
 
     "powerBatteryHead": {
@@ -2895,6 +3094,36 @@
     },
     "osdSetupOpenFont": {
         "message": "Open Font File"
+    },
+    "osdSetupCustomLogoTitle": {
+        "message": "Boot logo:"
+    },
+    "osdSetupCustomLogoOpenImageButton": {
+        "message": "Select custom image&hellip;"
+    },
+    "osdSetupCustomLogoInfoTitle": {
+        "message": "Custom image:"
+    },
+    "osdSetupCustomLogoInfoImageSize": {
+        "message": "Size must be $t(logoWidthPx)×$t(logoHeightPx) pixels"
+    },
+    "osdSetupCustomLogoInfoColorMap": {
+        "message": "Must contain green, black and white pixels"
+    },
+    "osdSetupCustomLogoInfoUploadHint": {
+        "message": "Click <b>$t(osdSetupUploadFont.message)</b> to persist custom logo"
+    },
+    "osdSetupCustomLogoImageSizeError": {
+        "message": "Invalid image size: {{width}}×{{height}} (expected $t(logoWidthPx)×$t(logoHeightPx))"
+    },
+    "osdSetupCustomLogoColorMapError": {
+        "message": "The image contains an invalid color palette (only green, black and white are allowed)"
+    },
+    "osdSetupReplaceLogoImageSizeError": {
+        "message": "Invalid image size; expected $1×$2 instead of $3×$4"
+    },
+    "osdSetupReplaceLogoImageColorsError": {
+        "message": "The image contains an invalid color palette (only green, black and white are allowed)"
     },
     "osdSetupUploadFont": {
         "message": "Upload Font"
@@ -3115,6 +3344,10 @@
     "osdDescStatRtcDateTime": {
         "message": "Date and time from real time clock"
     },
+    "osdDescStatBattery": {
+        "message": "Voltage of the battery in real time"
+    },
+
 
     "osdTimerSource": {
       "message": "Source:"
@@ -3153,6 +3386,9 @@
     "osdWarningCrashFlipMode": {
         "message": "Warns when flip over after crash mode is activated"
     },
+    "osdWarningEscFail": {
+        "message": "Enumerates a list with the ESCs/motors that are failing (RPM or temperature are out of the configured threshold)"
+    },
 
     "osdSectionHelpElements": {
         "message": "Enable or disable OSD elements."
@@ -3180,6 +3416,9 @@
     },
     "osdWritePermissions": {
         "message": "You don't have <span class=\"message-negative\">write permissions</span> for this file"
+    },
+    "osdButtonSaved": {
+        "message": "Saved"
     },
 
     "mainHelpArmed": {
