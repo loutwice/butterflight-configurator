@@ -323,8 +323,8 @@ TABS.configuration.initialize = function (callback, scrollPosition) {
             orientation_acc_e.val(SENSOR_ALIGNMENT.align_acc);
             orientation_mag_e.val(SENSOR_ALIGNMENT.align_mag);
         }
-        if (CONFIG.boardIdentifier == "HESP") { 
-            
+        if (CONFIG.boardIdentifier == "HESP") {
+
             orientation_acc_e.hide();
             orientation_mag_e.hide();
         }
@@ -587,6 +587,7 @@ TABS.configuration.initialize = function (callback, scrollPosition) {
 
         if ((CONFIG.flightControllerIdentifier === 'BTTR' && semver.gte(CONFIG.apiVersion, "1.31.0")) ||
             (CONFIG.flightControllerIdentifier === 'BTFL' && semver.gte(CONFIG.apiVersion, "1.31.0")) ||
+              (CONFIG.flightControllerIdentifier === 'EMUF' && semver.gte(CONFIG.apiVersion, "1.31.0")) ||
             (CONFIG.flightControllerIdentifier === 'CLFL' && semver.gte(CONFIG.apiVersion, "1.31.0"))) {
             serialRXtypes.push('JETIEXBUS');
         }
@@ -658,7 +659,7 @@ TABS.configuration.initialize = function (callback, scrollPosition) {
         // i am guessing this is a bug, since this wasn't happening on 37
         // code below is a temporary fix, which we will be able to remove in the future (hopefully)
         $('#content').scrollTop((scrollPosition) ? scrollPosition : 0);
-        
+
         $('input[name="board_align_roll"]').val(BOARD_ALIGNMENT_CONFIG.roll);
         $('input[name="board_align_pitch"]').val(BOARD_ALIGNMENT_CONFIG.pitch);
         $('input[name="board_align_yaw"]').val(BOARD_ALIGNMENT_CONFIG.yaw);
@@ -668,10 +669,10 @@ TABS.configuration.initialize = function (callback, scrollPosition) {
         } else {
             function toggleAdv(){
                 var checked = $(this).is(':checked');
-                if (checked){ 
+                if (checked){
                     $('select.gyroalign').val(0).attr('disabled', true);
-                    $('#board_alignment').show(); 
-                } else { 
+                    $('#board_alignment').show();
+                } else {
                     $('select.gyroalign').val(SENSOR_ALIGNMENT.align_gyro).attr('disabled', null);
                     $('#board_alignment').hide();
                     $('input[name="board_align_roll"]').val(0);
@@ -684,9 +685,9 @@ TABS.configuration.initialize = function (callback, scrollPosition) {
             if (BOARD_ALIGNMENT_CONFIG.roll || BOARD_ALIGNMENT_CONFIG.pitch || BOARD_ALIGNMENT_CONFIG.yaw){
                 $('#use_advanced_board_alignment').prop('checked', true);
                 setTimeout(toggleAdv.bind($('#use_advanced_board_alignment')),10);
-            } 
+            }
 
-            $('#board_alignment').hide();            
+            $('#board_alignment').hide();
             $('#sensor_acc_align').hide();
             $('#sensor_mag_align').hide();
         }

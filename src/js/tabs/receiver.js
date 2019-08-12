@@ -470,6 +470,9 @@ TABS.receiver.initModelPreview = function () {
     if (CONFIG.flightControllerIdentifier == 'BTTR' && semver.lt(CONFIG.flightControllerVersion, '2.8.0')) {
         useOldRateCurve = true;
     }
+    if (CONFIG.flightControllerIdentifier == 'EMUF' && semver.lt(CONFIG.flightControllerVersion, '2.8.0')) {
+        useOldRateCurve = true;
+    }
 
     this.rateCurve = new RateCurve(useOldRateCurve);
 

@@ -1,7 +1,7 @@
 {
-  "name": "butterflight-configurator",
-  "description": "Crossplatform configuration tool for Butterflight flight control system.",
-  "version": "10.4.3",
+  "name": "emuflight-configurator",
+  "description": "Crossplatform configuration tool for emuflight flight control system.",
+  "version": "10.4.4",
   "integrated_bbe_version": "3.1.0",
   "main": "main_nwjs.html",
   "bg-script": "js/eventPage.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/butterflight/butterflight-configurator"
+    "url": "github.com/emuflight/emuflight-configurator"
   },
   "webview": {
     "partitions": [
@@ -32,7 +32,7 @@
       }
     ]
   },
-  "author": "The Butterflight open source project.",
+  "author": "The Emuflight open source project.",
   "license": "GPL-3.0",
   "dependencies": {
     "i18next": "^10.3.0",
