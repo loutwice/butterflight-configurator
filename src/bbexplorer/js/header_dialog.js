@@ -268,7 +268,7 @@ function HeaderDialog(dialog, onSave) {
 				{bit: 27, group: 'other', name: 'ESC_SENSOR', description: 'Use KISS ESC 24A telemetry as sensor'},
 				{bit: 28, group: 'other', name: 'ANTI_GRAVITY', description: 'Temporary boost I-Term on high throttle changes'}
 			)
-			if (CONFIG.boardIdentifier != "HESP") {
+			if (CONFIG.boardIdentifier != "HESP" && CONFIG.boardIdentifier !== "SX10" ) {
 				features.push(
 					{bit: 29, group: 'other', name: 'DYNAMIC_FILTER', description: 'Dynamic gyro notch filtering'}
 				)

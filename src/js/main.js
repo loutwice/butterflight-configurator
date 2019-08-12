@@ -559,7 +559,7 @@ function updateTabList(features) {
 }
 
 function updateExpertModeOnlyUIElements() {
-    if (CONFIG && CONFIG.boardIdentifier !== "HESP") {
+    if (CONFIG && ( CONFIG.boardIdentifier !== "HESP" &&  CONFIG.boardIdentifier !== "SX10") ){
         $('.stage2FilterType').toggle(isExpertModeEnabled());
         $('.stage2FilterWarning').toggle(isExpertModeEnabled());
     }
