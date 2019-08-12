@@ -877,7 +877,7 @@ OSD.constants = {
     { file: "bold", name: "Bold" },
     { file: "large", name: "Large" },
     { file: "extra_large", name: "Extra Large" },
-    { file: "butterflight", name: "Emuflight" },
+    { file: "emuflight", name: "Emuflight" },
     { file: "digital", name: "Digital" },
     { file: "clarity", name: "Clarity" }
   ]
