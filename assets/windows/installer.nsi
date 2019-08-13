@@ -9,14 +9,17 @@
 # ${DEST_FOLDER} - Destination folder for the installer files
 
 # Some definitions
-!define SOURCE_FILES          "..\..\apps\emufligth-configurator\${PLATFORM}\*"
+!define VERSION               "10.4.4"
+!define PLATFORM               "win32"
+!define DEST_FOLDER               "FINALLY"
+!define SOURCE_FILES          "..\..\apps\emuflight-configurator\${PLATFORM}\*"
 !define APP_NAME              "Emuflight Configurator"
 !define COMPANY_NAME          "The Emuflight open source project."
 !define GROUP_NAME            "Emuflight"
 !define FOLDER_NAME           "Emuflight-Configurator"
-!define FILE_NAME_INSTALLER   "emufligth-configurator-installer_${VERSION}_${PLATFORM}.exe"
-!define FILE_NAME_UNINSTALLER "uninstall-emufligth-configurator.exe"
-!define FILE_NAME_EXECUTABLE  "emufligth-configurator.exe"
+!define FILE_NAME_INSTALLER   "emuflight-configurator-installer_${VERSION}_${PLATFORM}.exe"
+!define FILE_NAME_UNINSTALLER "uninstall-emuflight-configurator.exe"
+!define FILE_NAME_EXECUTABLE  "emuflight-configurator.exe"
 !define LICENSE               "..\..\LICENSE"
 
 
@@ -24,8 +27,8 @@ Name "${APP_NAME}"
 BrandingText "${COMPANY_NAME}"
 
 # set the icon
-!define MUI_ICON ".\butter_installer.ico"
-!define MUI_UNICON ".\butter_uninstaller.ico"
+!define MUI_ICON ".\emu_installer.ico"
+!define MUI_UNICON ".\emu_uninstaller.ico"
 
 #Define uninstall list name
 !define UninstName "uninbf00"
