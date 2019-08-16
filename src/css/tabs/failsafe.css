@@ -63,7 +63,8 @@
     background-color: #ededed;
     margin-bottom: 0;
     margin-top: 5px;
-    height: 150px;
+    min-height: 90px;
+    padding-bottom: 10px;
 }
 
 .tab-failsafe .radiobuttons {
@@ -248,9 +249,7 @@
     padding-bottom: 7px;
 }
 
-.tab-failsafe .pro1 {
-    height: 90px;
-}
+
 
 .tab-failsafe .featuresNew {
     width: 100%;
