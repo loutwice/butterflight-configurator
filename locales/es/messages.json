@@ -317,7 +317,7 @@
         "message": "Esta versión de firmware <span class=\"message-negative\">no está soportada<\/span>. Por favor actualiza a un firmware con soporte para el api versión <strong>$1<\/strong> o superior. Usa CLI para realizar un copia de seguridad antes de la instalación. El proceso de copia\/restauración usando CLI está en la documentación.<br \/>Como alternativa puedes descargar y usar una versión anterior del configurador si no estás listo para actualizar."
     },
     "firmwareTypeNotSupported": {
-        "message": "No - Cleanflight\/Emuflight firmware <span class=\"message-negative\"> no soportado<\/span>, excepto modo CLI."
+        "message": "No -  /Emuflight firmware <span class=\"message-negative\"> no soportado<\/span>, excepto modo CLI."
     },
     "firmwareUpgradeRequired": {
         "message": "El firmware de este dispositivo necesita actualizarse a una nueva versión. Use CLI para hacer una copia de seguridad antes de flashear. El proceso de copia\/restauración con CLI está en la documentación.<br \/>Alternativamente puede descargar y usar una versión anterior del configurador si no está preparado para actualizar."
