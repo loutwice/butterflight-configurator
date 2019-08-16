@@ -18,7 +18,7 @@
 
 
 .tab-gps #connect {
-   display:none; 
+   display:none;
    text-align:center;
    padding-top:40%;
 }
@@ -42,7 +42,7 @@
 }
 
 .tab-gps #loadmap {
-    margin-top:0px; 
+    margin-top:0px;
     display:none;
 }
 
@@ -124,7 +124,7 @@ progress[value]::-webkit-progress-bar {
 
 progress[value]::-webkit-progress-value {
     background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .15)),
-        -webkit-linear-gradient(left, #ffbb00, #ffbb00);
+        -webkit-linear-gradient(left, #22b7eb, #22b7eb);
     border-radius: 2px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25) inset;
 }

@@ -1114,7 +1114,7 @@ html.isINAV input[type="checkbox"].ios-switch:checked + div > div {
 
 html.isBF .config-graph h4 span:first-child,
 html.isBF .log-graph-config h3 span {
-    /*background-image: linear-gradient(to bottom,#fff8e9 0,#ffbb00 100%);*/
+    /*background-image: linear-gradient(to bottom,#fff8e9 0,#2297eb 100%);*/
     color: black;
     background-color: #22b7eb;
     border: 1px solid #2297eb;
@@ -1359,7 +1359,7 @@ dialog h3 {
     margin-top: 8px;
     margin-bottom: 8px;
     margin-right: 10px;
-    background-color: #ffbb00;
+    background-color: #22b7eb;
     border-radius: 3px;
     border: 1px solid #2297eb;
     color: #000;
