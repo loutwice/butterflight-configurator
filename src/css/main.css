@@ -1079,7 +1079,7 @@ dialog {
     margin-right: 20px;
     background-color: #22b7eb;
     border-radius: 3px;
-    border: 1px solid #dba718;
+    border: 1px solid #2297eb;
     color: #000;
     float: right;
     font-family: 'open_sansbold', Arial;
@@ -1300,7 +1300,7 @@ dialog {
     margin-right: 20px;
     background-color: #22b7eb;
     border-radius: 3px;
-    border: 1px solid #dba718;
+    border: 1px solid #2297eb;
     color: #000;
     float: right;
     font-family: 'open_sansbold', Arial;
@@ -1316,7 +1316,7 @@ dialog {
 }
 
 .fixed_band .save_btn a:hover {
-    background-color: #ffcc3f;
+    background-color: #6edbff;
     transition: all ease 0.2s;
 }
 
@@ -1334,7 +1334,7 @@ dialog {
     text-align: center;
     background-color: #22b7eb;
     border-radius: 4px;
-    border: 1px solid #dba718;
+    border: 1px solid #2297eb;
     color: #000;
     font-family: 'open_sanssemibold', Arial;
     font-size: 12px;
@@ -1351,7 +1351,7 @@ dialog {
 }
 
 .default_btn a:hover {
-    background-color: #ffcc3f;
+    background-color: #6edbff;
     color: #000;
     text-shadow: 0px 1px rgba(255, 255, 255, 0.25);
     transition: all ease 0.2s;
@@ -1360,7 +1360,7 @@ dialog {
 }
 
 .default_btn a:active {
-    background-color: #ffcc3f;
+    background-color: #6edbff;
     transition: all ease 0.0s;
     box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.35);
 }
@@ -1371,7 +1371,7 @@ dialog {
     margin-right: 10px;
     background-color: #22b7eb;
     border-radius: 3px;
-    border: 1px solid #dba718;
+    border: 1px solid #2297eb;
     color: #000;
     font-family: 'open_sansbold', Arial;
     font-size: 12px;
@@ -1427,13 +1427,13 @@ dialog {
     background-color: #22b7eb;
     text-shadow: 0px 1px rgba(255, 255, 255, 0.25);
     color: #000;
-    border: 1px solid #dba718;
+    border: 1px solid #2297eb;
     transition: all ease 0.2s;
 }
 
 .green a:hover {
-    background-color: #ffcc3f;
-    border: 1px solid #dba718;
+    background-color: #6edbff;
+    border: 1px solid #2297eb;
     text-shadow: 0px 1px rgba(255, 255, 255, 0.25);
     color: #000;
     transition: all ease 0.2s;
@@ -1515,7 +1515,7 @@ dialog {
 
 .connect_b a.connect {
     background-color: #22b7eb;
-    border: 1px solid #dba718;
+    border: 1px solid #2297eb;
     background-image: url(../images/icons/cf_icon_usb2_white.svg);
     background-repeat: no-repeat;
     background-size: 44px;
@@ -1524,7 +1524,7 @@ dialog {
 }
 
 .connect_b a.connect:hover {
-    background-color: #ffcc3f;
+    background-color: #6edbff;
 }
 
 .connect_b a.connect.active {
@@ -1809,7 +1809,7 @@ button {
 
 button.active {
     background-color: #22b7eb;
-    border: 1px solid #dba718;
+    border: 1px solid #2297eb;
     color: #000;
 }
 

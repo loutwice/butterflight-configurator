@@ -116,7 +116,7 @@ fieldset[disabled] .btn-default.active {
   background-repeat: repeat-x;*/
     font-family: 'open_sansbold', Arial;
     margin-right: 5px;
-    border-color: #dba718;
+    border-color: #2297eb;
 }
 .btn-primary:hover,
 .btn-primary:focus {
@@ -126,7 +126,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active {
     background-color: #22b7eb;
-    border-color: #dba718;
+    border-color: #2297eb;
 }
 .btn-primary.disabled,
 .btn-primary[disabled],
