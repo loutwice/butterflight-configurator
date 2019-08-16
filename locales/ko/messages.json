@@ -2694,6 +2694,9 @@
     "failsafeProcedureItemSelect2": {
         "message": "추락"
     },
+    "failsafeProcedureItemSelect4": {
+      "message": "GPS Rescue"
+  },
     "failsafeKillSwitchItem": {
         "message": "페일세이프 킬 스위치 (모드 탭에서 페일세이프 설정)"
     },

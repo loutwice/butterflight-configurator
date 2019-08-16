@@ -2810,6 +2810,9 @@
     "failsafeProcedureItemSelect2": {
         "message": "Drop"
     },
+    "failsafeProcedureItemSelect4": {
+      "message": "GPS Rescue"
+  },
     "failsafeKillSwitchItem": {
         "message": "Failsafe Kill Switch (setup Failsafe in Modes Tab)"
     },

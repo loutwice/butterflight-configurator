@@ -2649,6 +2649,9 @@
     "failsafeProcedureItemSelect2": {
         "message": "落下"
     },
+    "failsafeProcedureItemSelect4": {
+      "message": "GPS Rescue"
+  },
     "failsafeKillSwitchItem": {
         "message": "フェイルセーフ キルスイッチ ( [モード] タブでフェイルセーフを設定)"
     },

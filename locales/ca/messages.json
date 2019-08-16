@@ -2524,6 +2524,9 @@
     "failsafeProcedureItemSelect2": {
         "message": "Deixa caure"
     },
+    "failsafeProcedureItemSelect4": {
+      "message": "GPS Rescue"
+  },
     "failsafeKillSwitchItem": {
         "message": "Failsafe Kill Switch (configurar Failsafe a la pestanya Modes)"
     },

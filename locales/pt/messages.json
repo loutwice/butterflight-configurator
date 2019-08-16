@@ -2649,6 +2649,9 @@
     "failsafeProcedureItemSelect2": {
         "message": "Cair"
     },
+    "failsafeProcedureItemSelect4": {
+      "message": "GPS Rescue"
+  },
     "failsafeKillSwitchItem": {
         "message": "\"Kill Switch\" da prevenção contra acidentes (configure na aba Modos)"
     },

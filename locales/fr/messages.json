@@ -2691,6 +2691,9 @@
     "failsafeProcedureItemSelect2": {
         "message": "Tombe"
     },
+    "failsafeProcedureItemSelect4": {
+      "message": "GPS Rescue"
+  },
     "failsafeKillSwitchItem": {
         "message": "Switch de Failsafe (attribution via l'onglet Modes)"
     },

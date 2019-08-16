@@ -2688,6 +2688,9 @@
     "failsafeProcedureItemSelect2": {
         "message": "Sofortiges Abschalten und unkontrollierter Absturz"
     },
+    "failsafeProcedureItemSelect4": {
+      "message": "GPS Rescue"
+  },
     "failsafeKillSwitchItem": {
         "message": "Failsafe \"Kill Switch\" (Einstellungen im Modes Tab)"
     },

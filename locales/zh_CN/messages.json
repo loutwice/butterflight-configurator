@@ -2697,6 +2697,9 @@
     "failsafeProcedureItemSelect2": {
         "message": "坠落"
     },
+    "failsafeProcedureItemSelect4": {
+      "message": "GPS Rescue"
+  },
     "failsafeKillSwitchItem": {
         "message": "失控保护开关 （在模式页面设置失控保护模式）"
     },
