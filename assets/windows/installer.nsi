@@ -9,7 +9,7 @@
 # ${DEST_FOLDER} - Destination folder for the installer files
 
 # Some definitions
-!define VERSION               "10.4.4"
+!define VERSION               "0.0.1"
 !define PLATFORM               "win32"
 !define DEST_FOLDER               "FINALLY"
 !define SOURCE_FILES          "..\..\apps\emuflight-configurator\${PLATFORM}\*"
