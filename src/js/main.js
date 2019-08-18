@@ -410,7 +410,7 @@ function startProcess() {
 };
 
 function checkForConfiguratorUpdates() {
-    var releaseChecker = new ReleaseChecker('configurator', 'https://api.github.com/repos/butterflight/butterflight-configurator/releases');
+    var releaseChecker = new ReleaseChecker('configurator', 'https://api.github.com/repos/emuflight/emuflight-configurator/releases');
 
     releaseChecker.loadReleaseData(notifyOutdatedVersion);
 }

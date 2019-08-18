@@ -92,7 +92,7 @@ var MSPCodes = {
     MSP_ANALOG:                     110,
     MSP_RC_TUNING:                  111,
     MSP_PID:                        112,
-    //MSP_BOX:                        113, // DEPRECATED 
+    //MSP_BOX:                        113, // DEPRECATED
     MSP_MISC:                       114, // DEPRECATED
     MSP_BOXNAMES:                   116,
     MSP_PIDNAMES:                   117,
@@ -110,6 +110,7 @@ var MSPCodes = {
     MSP_MOTOR_CONFIG:               131,
     MSP_GPS_CONFIG:                 132,
     MSP_COMPASS_CONFIG:             133,
+  MSP_GPS_RESCUE:                 135,
 
     MSP_STATUS_EX:                  150,
 
@@ -145,6 +146,7 @@ var MSPCodes = {
     MSP_SET_MOTOR_CONFIG:           222,
     MSP_SET_GPS_CONFIG:             223,
     MSP_SET_COMPASS_CONFIG:         224,
+MSP_SET_GPS_RESCUE:             230,
 
     //Fast Kalman Q & R
     MSP_FAST_KALMAN:                225,
