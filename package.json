@@ -1,7 +1,7 @@
 {
   "name": "emuflight-configurator",
   "description": "Crossplatform configuration tool for emuflight flight control system.",
-  "version": "10.4.4",
+  "version": "0.0.1",
   "integrated_bbe_version": "3.1.0",
   "main": "main_nwjs.html",
   "bg-script": "js/eventPage.js",
@@ -35,10 +35,11 @@
   "author": "The Emuflight open source project.",
   "license": "GPL-3.0",
   "dependencies": {
+    "gulp-appdmg": "^1.0.3",
     "i18next": "^10.3.0",
     "i18next-xhr-backend": "^1.5.1",
     "lru_map": "^0.3.3",
-    "marked": "^0.3.12",
+    "marked": "^0.7.0",
     "to-buffer": "^1.1.1"
   },
   "devDependencies": {
@@ -58,7 +59,7 @@
     "nw-builder": "^3.4.1",
     "os": "^0.1.1",
     "platform-dependent-modules": "0.0.14",
-    "rpm-builder": "^0.7.0",
+    "rpm-builder": "^1.1.0",
     "targz": "^1.0.1",
     "temp": "^0.8.3"
   },
