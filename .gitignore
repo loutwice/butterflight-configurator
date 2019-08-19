@@ -11,7 +11,9 @@ apps/
 dist/
 debug/
 release/
+FINALLY/
 
 # artefacts for Visual Studio Code
 /.vscode/
-FINALLY/emuflight-configurator-installer_14.4.4_win32.exe
+FINALLY/emuflight-configurator-installer_10.4.4_win32.exe
+FINALLY/emuflight-configurator-installer_10.4.4_win32.exe
