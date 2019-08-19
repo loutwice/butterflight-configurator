@@ -294,7 +294,7 @@ TABS.configuration.initialize = function (callback, scrollPosition) {
             'CW 180° flip',
             'CW 270° flip',
         ];
-        if (CONFIG.boardIdentifier == 'HESP' || CONFIG.boardIdentifier == 'SX10' ) {
+        if (CONFIG.boardIdentifier == 'HESP' || CONFIG.boardIdentifier == 'SX10' || CONFIG.boardIdentifier == 'FLUX' ) {
             alignments.push(
                 'CW 45°',
                 'CW 135°',
@@ -323,7 +323,7 @@ TABS.configuration.initialize = function (callback, scrollPosition) {
             orientation_acc_e.val(SENSOR_ALIGNMENT.align_acc);
             orientation_mag_e.val(SENSOR_ALIGNMENT.align_mag);
         }
-        if (CONFIG.boardIdentifier == "HESP"  || CONFIG.boardIdentifier == 'SX10') {
+        if (CONFIG.boardIdentifier == "HESP"  || CONFIG.boardIdentifier == 'SX10' || CONFIG.boardIdentifier == 'FLUX') {
 
             orientation_acc_e.hide();
             orientation_mag_e.hide();
@@ -664,7 +664,7 @@ TABS.configuration.initialize = function (callback, scrollPosition) {
         $('input[name="board_align_pitch"]').val(BOARD_ALIGNMENT_CONFIG.pitch);
         $('input[name="board_align_yaw"]').val(BOARD_ALIGNMENT_CONFIG.yaw);
 
-        if (CONFIG.boardIdentifier !== "HESP" && CONFIG.boardIdentifier !== "SX10" ) {
+        if (CONFIG.boardIdentifier !== "HESP" && CONFIG.boardIdentifier !== "SX10" && CONFIG.boardIdentifier !== "FLUX") {
             $('.use_advanced_board_alignment_container').hide();
         } else {
             function toggleAdv(){

@@ -86,7 +86,7 @@ var Features = function (config) {
             features.push(
                 {bit: 28, group: 'other', name: 'ANTI_GRAVITY'}
             );
-            if (CONFIG.boardIdentifier != "HESP" && CONFIG.boardIdentifier !== "SX10") {
+            if (CONFIG.boardIdentifier != "HESP" && CONFIG.boardIdentifier !== "SX10" && CONFIG.boardIdentifier !== "FLUX") {
                 features.push(
                     {bit: 29, group: 'other', name: 'DYNAMIC_FILTER'}
                 );

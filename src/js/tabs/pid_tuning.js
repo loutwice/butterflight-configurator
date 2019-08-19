@@ -35,7 +35,7 @@ TABS.pid_tuning.initialize = function (callback) {
         return MSP.promise(MSPCodes.MSP_FILTER_CONFIG);
     }).then(function () {
         if (semver.gte(CONFIG.apiVersion, "1.40.0")) {
-            if (CONFIG.boardIdentifier !== "HESP" && CONFIG.boardIdentifier !== "SX10") {
+            if (CONFIG.boardIdentifier !== "HESP" && CONFIG.boardIdentifier !== "SX10" && CONFIG.boardIdentifier !== "FLUX") {
                 return MSP.promise(MSPCodes.MSP_FAST_KALMAN);
             } else {
                 return MSP.promise(MSPCodes.MSP_IMUF_CONFIG);
@@ -297,7 +297,7 @@ TABS.pid_tuning.initialize = function (callback) {
         if (semver.gte(CONFIG.apiVersion, "1.40.0")) {
             $('.profile select[name="stage2FilterType"]').val(FILTER_CONFIG.gyro_stage2_filter_type);
 
-            if (CONFIG.boardIdentifier !== "HESP" && CONFIG.boardIdentifier !== "SX10") {
+            if (CONFIG.boardIdentifier !== "HESP" && CONFIG.boardIdentifier !== "SX10" && CONFIG.boardIdentifier !== "FLUX") {
                 $('.profile select[name="stage2FilterType"]').change(function () {
                     $('.kalmanFilterSettingsPanel').toggle(isKalmanFilterSelected());
                 });
@@ -473,7 +473,7 @@ TABS.pid_tuning.initialize = function (callback) {
         }
 
         if (semver.gte(CONFIG.apiVersion, "1.40.0")) {
-            if (CONFIG.boardIdentifier !== "HESP" && CONFIG.boardIdentifier !== "SX10") {
+            if (CONFIG.boardIdentifier !== "HESP" && CONFIG.boardIdentifier !== "SX10" && CONFIG.boardIdentifier !== "FLUX") {
                 if (isExpertModeEnabled()) {
                     FILTER_CONFIG.gyro_stage2_filter_type = $('.profile select[name="stage2FilterType"]').val();
                 }
@@ -1098,7 +1098,7 @@ TABS.pid_tuning.initialize = function (callback) {
                 return MSP.promise(MSPCodes.MSP_SET_FILTER_CONFIG, mspHelper.crunch(MSPCodes.MSP_SET_FILTER_CONFIG));
             }).then(function () {
                 if (semver.gte(CONFIG.apiVersion, "1.40.0")) {
-                    if(CONFIG.boardIdentifier !== "HESP" && CONFIG.boardIdentifier !== "SX10") {
+                    if(CONFIG.boardIdentifier !== "HESP" && CONFIG.boardIdentifier !== "SX10" && CONFIG.boardIdentifier !== "FLUX") {
                         if (isKalmanFilterSelected()) {
                             return MSP.promise(MSPCodes.MSP_SET_FAST_KALMAN, mspHelper.crunch(MSPCodes.MSP_SET_FAST_KALMAN));
                         }
